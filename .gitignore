@@ -5,6 +5,7 @@ node_modules
 
 # production
 build
+*.json.gzip
 
 # misc
 .DS_Store
