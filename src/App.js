@@ -22,6 +22,10 @@ let profiletext =
 	'Mail': {
 		'Title': 'Mail',
 		'Text': 'Goryudyuma@gmail.com'
+	},
+	'GitHub': {
+		'Title': 'GitHub',
+		'Text': 'https://github.com/Goryudyuma'
 	}
 }
 
@@ -48,6 +52,7 @@ class Content extends Component {
 			<CardExampleWithoutAvatar content={profiletext.Affiliation} />
 			<CardExampleWithoutAvatar content={profiletext.Twitter} />
 			<CardExampleWithoutAvatar content={profiletext.Mail} />
+			<CardExampleWithoutAvatar content={profiletext.GitHub} />
 		</div>
 	);
 }
@@ -57,9 +62,6 @@ class Title extends Component {
 		<AppBar
 			title="Goryudyuma"
 			style={{backgroundColor:Colors.blue700}}
-			iconClassNameRight="muidocs-icon-navigation-expand-more"
-			onLeftIconButtonTouchTap={this.props.menu}
-			onTitleTouchTap={this.props.menu}
 		/>
 	);
 }
